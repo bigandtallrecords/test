@@ -1,0 +1,22 @@
+{
+  "resourceName": "nosql",
+  "tableName": "test-nosql",
+  "partitionKey": {
+    "fieldName": "artist",
+    "fieldType": "string"
+  },
+  "sortKey": {
+    "fieldName": "track-name",
+    "fieldType": "string"
+  },
+  "gsi": [
+    {
+      "name": "trackname",
+      "partitionKey": {
+        "fieldName": "artist",
+        "fieldType": "string"
+      }
+    }
+  ],
+  "triggerFunctions": []
+}
